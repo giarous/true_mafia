@@ -8,4 +8,3 @@
 ## Screenshots
 
 [![mafia-demo-transparrent.png](https://i.postimg.cc/TYmGfkMW/mafia-demo-transparrent.png)](https://postimg.cc/HVpFt9Lp)
-ttps://i.postimg.cc/TYmGfkMW/mafia-demo-transparrent.png)](https://postimg.cc/HVpFt9Lp)
