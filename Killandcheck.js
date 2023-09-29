@@ -79,7 +79,6 @@ export default class KillandCheck extends Component<Props> {
       }
 
   nextPlayer= () => {
-    //this.increaseCounter();
     if(this.state.counter<9){
         this.props.navigation.replace(
             'Night', {players_data: this.state.players, temp_confirm: this.state.confirm, temp_counter: this.state.counter, temp_kill_choice: this.state.kill_choice});
@@ -87,7 +86,6 @@ export default class KillandCheck extends Component<Props> {
     }
     else{
         console.log('Mafia time Kill and Check');
-    //this.playMusic();
     this.props.navigation.replace(
         'Second_Day', {players_data: this.state.players, temp_kill_choice: this.state.kill_choice});
     
@@ -108,7 +106,6 @@ export default class KillandCheck extends Component<Props> {
             };
   
   render() {
-    //const { params } = this.props.navigation.state;
     return (
       <View style={styles.container}>
           <View style={styles.main}>

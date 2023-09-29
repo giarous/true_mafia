@@ -1,15 +1,11 @@
 'use strict';
 
 import React, { Component } from 'react'
-//import SoundPlayer from 'react-native-sound-player'
-//import Sound from 'react-native-sound';
-
 import {
  View, Text, StyleSheet, Image, TouchableHighlight
 } from 'react-native';
 
 type Props = {};
-//var Sound = require('react-native-sound');
 export default class NightComponent extends Component<Props> {
 
   constructor(props) {
@@ -31,9 +27,7 @@ export default class NightComponent extends Component<Props> {
         if(this.state.confirm == 'role_checked'){
           this.setState({ counter: this.state.counter + 1});
         }
-       
     }
-
 
   confirmRole = () => {
     
@@ -44,7 +38,6 @@ export default class NightComponent extends Component<Props> {
 
   
   render() {
-    //const { params } = this.props.navigation.state;
     return (
       <View style={styles.container}>
           <View>

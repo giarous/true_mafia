@@ -63,7 +63,7 @@ export default class ListComponent extends Component<Props> {
 
       this.introduction.play((success) => {
       if (!success) {
-        console.log('Sound did not stoped properlly')
+        console.log('Sound did not stopped properly')
       }
     })}, 2000); 
     
@@ -73,7 +73,6 @@ export default class ListComponent extends Component<Props> {
       }
     })
   }
-  //_keyExtractor = (item, index) => index.toString();
   _shuffleRoles = () => {
     const newArray = [...this.state.roles];
       for (let i = newArray.length - 1; i > 0; i--) {
@@ -141,7 +140,6 @@ export default class ListComponent extends Component<Props> {
                           style = {styles.button}
                           underlayColor= "white"
                           onPress = {this._assignRoles}
-                          //onPress = {this.showList}
                       >
                       <Text
                           style={styles.buttonText}>
@@ -149,8 +147,7 @@ export default class ListComponent extends Component<Props> {
                       </Text>
                   </TouchableHighlight>
         </View>
-         
-        
+
       </View>
     );
   }

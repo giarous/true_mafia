@@ -22,8 +22,6 @@ export default class Checking extends Component<Props> {
       button_text: 'Confirm and pass',
       check_option: 10,
       value: 'Nothing',
-      //button_function: this.nextPlayer,      
-      
     }
   }
     componentDidMount() {
@@ -56,7 +54,6 @@ export default class Checking extends Component<Props> {
       } 
   
   render() {
-    //const { params } = this.props.navigation.state;  
 
 return (
   <View style={styles.container}>

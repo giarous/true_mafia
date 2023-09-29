@@ -24,14 +24,11 @@ export default class StartScreen extends Component<Props> {
       };
   
   render() {
-    //const { params } = this.props.navigation.state;
     return (
       <View style={styles.container}>
 
         <Image
-              //source={require('./resources/start_screen.png')} style={styles.thumb}
               source={require('./resources/start_screen_2.jpg')} style={styles.thumb}
-
               />          
       </View>
     );

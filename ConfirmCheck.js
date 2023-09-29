@@ -33,7 +33,6 @@ export default class ConfirmCheck extends Component<Props> {
     }
   }
     componentDidMount() {
-        //console.log(this.state.image_source);
         console.log(this.state.players[this.state.check_option].role);
         if(this.state.players[this.state.check_option].role == 'Citizen'){
           this.setState({image_source: this.state.image_source_arr[0]});
@@ -54,7 +53,6 @@ export default class ConfirmCheck extends Component<Props> {
       }
 
   nextPlayer= () => {
-    //this.increaseCounter();
     if(this.state.counter<9){
         this.props.navigation.replace(
             'Night', {players_data: this.state.players, 
@@ -65,7 +63,6 @@ export default class ConfirmCheck extends Component<Props> {
     }
     else{
         console.log('2nd Day');
-    //this.playMusic();
     this.props.navigation.replace(
         'Second_Day', {players_data: this.state.players, temp_kill_choice: this.state.kill_choice});
     
@@ -73,7 +70,6 @@ export default class ConfirmCheck extends Component<Props> {
     };
   
   render() {
-    //const { params } = this.props.navigation.state;
     return (
       <View style={styles.container}>
           <View style={styles.main}>

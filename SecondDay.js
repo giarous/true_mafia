@@ -100,9 +100,6 @@ export default class SecondDay extends Component<Props> {
 
         this.play_song();
 
-
-
-        //console.log(this.state.players);
     }
     play_song = () =>{
 
@@ -197,7 +194,7 @@ export default class SecondDay extends Component<Props> {
         else {
           this.miss.play((success) => {
             if (!success) {
-              console.log('Sound did not stoped properlly')
+              console.log('Sound did not stopped properly')
             }
           })}
 
@@ -232,7 +229,6 @@ export default class SecondDay extends Component<Props> {
     };
   
   render() {
-    //const { params } = this.props.navigation.state;
     return (
       <View style={styles.container}>
           <View>

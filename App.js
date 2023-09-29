@@ -34,7 +34,7 @@ const App = createAppContainer(createStackNavigator({
 
   Details: {
     screen: DetailsComponent,
-    navigationOptions: {title: "Introducton to roles" }
+    navigationOptions: {title: "Introduction to roles" }
   },
   MafiaTime: {
     screen: MafiaTimeComponent,

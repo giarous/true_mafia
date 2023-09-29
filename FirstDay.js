@@ -47,7 +47,6 @@ export default class DayComponent extends Component<Props> {
     };
   
   render() {
-    //const { params } = this.props.navigation.state;
     return (
       <View style={styles.container}>
         <View>

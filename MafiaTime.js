@@ -59,7 +59,7 @@ export default class MafiaTimeComponent extends Component<Props> {
   
             this.noch.play((success) => {
             if (!success) {
-              console.log('Sound did not stoped properlly')
+              console.log('Sound did not stopped properly')
             }
           })}, 14000); 
           
@@ -68,7 +68,7 @@ export default class MafiaTimeComponent extends Component<Props> {
     
             this.mafia_deal.play((success) => {
             if (!success) {
-              console.log('Sound did not stoped properlly')
+              console.log('Sound did not stopped properly')
             }
           });
           KeepAwake.activate();
@@ -78,7 +78,7 @@ export default class MafiaTimeComponent extends Component<Props> {
     
             this.ten_seconds.play((success) => {
             if (!success) {
-              console.log('Sound did not stoped properlly')
+              console.log('Sound did not stopped properly')
             }
           })}, 71000); 
     
@@ -86,7 +86,7 @@ export default class MafiaTimeComponent extends Component<Props> {
     
             this.day.play((success) => {
             if (!success) {
-              console.log('Sound did not stoped properlly')
+              console.log('Sound did not stopped properly')
             }
           });
           this.props.navigation.replace(
@@ -97,7 +97,7 @@ export default class MafiaTimeComponent extends Component<Props> {
     
             this.mafia_sleeps.play((success) => {
             if (!success) {
-              console.log('Sound did not stoped properlly')
+              console.log('Sound did not stopped properly')
             }
           });
           KeepAwake.deactivate();
@@ -109,7 +109,6 @@ export default class MafiaTimeComponent extends Component<Props> {
     };
   
   render() {
-    //const { params } = this.props.navigation.state;
     return (
       <View style={styles.container}>
         <View>

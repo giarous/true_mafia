@@ -23,7 +23,6 @@
       };
 
       this._updatePlayers = this._updatePlayers.bind(this);
-      //this.stop_song = this.stop_song.bind(this);
     }
 
     stop_song=()=>{
@@ -43,7 +42,7 @@
 
         this.hello.play((success) => {
         if (!success) {
-          console.log('Sound did not stoped properlly')
+          console.log('Sound did not stopped properly')
         }
       })}, 10000); 
 
@@ -51,7 +50,7 @@
 
         this.noch.stop((success) => {
         if (!success) {
-          console.log('Sound did not stoped properlly')
+          console.log('Sound did not stopped properly')
         }
       })}, 15000); 
 
@@ -68,7 +67,6 @@
     };
 
     _updatePlayers = (text, index) => {
-      //this.play_song();
       const newArray = [...this.state.names];
       newArray[index] = text;
       this.setState({ names: newArray });
@@ -88,8 +86,6 @@
   
     render() {  
     console.log(this.state.names);
-    //console.log(this.state.roles);
-    //console.log(this.state.players);
       return (
           <View style = {styles.container}>
               <View style={styles.titleContainer}>
@@ -100,62 +96,59 @@
                   <TextInput 
                       style = {styles.textInput} 
                       placeholder="Player 1"
-                      defaulValue = {this.state.names[0]} 
+                      defaultValue = {this.state.names[0]}
                       onChangeText={(text) =>this._updatePlayers(text,0)} />
                       
                     <TextInput 
                       style = {styles.textInput} 
                       placeholder="Player 2"
-                      defaulValue = {this.state.names[1]} 
+                      defaultValue = {this.state.names[1]}
                       onChangeText={(text) =>this._updatePlayers(text,1)} />
                 
                     <TextInput 
                       style = {styles.textInput} 
                       placeholder="Player 3"
-                      defaulValue = {this.state.names[2]} 
+                      defaultValue = {this.state.names[2]}
                       onChangeText={(text) =>this._updatePlayers(text,2)} />
                       <TextInput 
                       style = {styles.textInput} 
                       placeholder="Player 4"
-                      defaulValue = {this.state.names[3]} 
+                      defaultValue = {this.state.names[3]}
                       onChangeText={(text) =>this._updatePlayers(text,3)} />
                       <TextInput 
                       style = {styles.textInput} 
                       placeholder="Player 5"
-                      defaulValue = {this.state.names[4]} 
+                      defaultValue = {this.state.names[4]}
                       onChangeText={(text) =>this._updatePlayers(text,4)} />
                  </View>
                  <View style = {styles.col} >
                   <TextInput 
                       style = {styles.textInput} 
                       placeholder="Player 6"
-                      defaulValue = {this.state.names[5]} 
+                      defaultValue = {this.state.names[5]}
                       onChangeText={(text) =>this._updatePlayers(text,5)} />
                       <TextInput 
                       style = {styles.textInput} 
                       placeholder="Player 7"
-                      defaulValue = {this.state.names[6]} 
+                      defaultValue = {this.state.names[6]}
                       onChangeText={(text) =>this._updatePlayers(text,6)} />
                       <TextInput 
                       style = {styles.textInput} 
                       placeholder="Player 8"
-                      defaulValue = {this.state.names[7]} 
+                      defaultValue = {this.state.names[7]}
                       onChangeText={(text) =>this._updatePlayers(text,7)} />
                       <TextInput 
                       style = {styles.textInput} 
                       placeholder="Player 9"
-                      defaulValue = {this.state.names[8]} 
+                      defaultValue = {this.state.names[8]}
                       onChangeText={(text) =>this._updatePlayers(text,8)} />
                       <TextInput 
                       style = {styles.textInput} 
                       placeholder="Player 10"
-                      defaulValue = {this.state.names[9]} 
+                      defaultValue = {this.state.names[9]}
                       onChangeText={(text) =>this._updatePlayers(text,9)} />
                  </View>
 
-                  
-                   
-                  
               </View>
               <View style = {styles.buttonFrame}>
               <TouchableHighlight
